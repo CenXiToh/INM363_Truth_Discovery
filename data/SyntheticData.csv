@@ -1,0 +1,6 @@
+Quantity,Artefact,Brand,Model Number,Artefact Problem,Problem Symptoms,Problem Investigation,Artefacts Needed for Problem Investigation,Problem Resolution,Way of Carrying Out the Problem Resolution,Artefacts Needed for Problem Resolution
+Universally,Refrigerator,LG,4600,Running but not cooling,Dust and debris,Clean the condenser coils,Vacuum or brush,Clean the condenser coils,Use a vacuum or brush to clean the coils,Vacuum or brush
+Universally,Refrigerator,Samsung,5700,Door seals,Cracks or gaps,Check the door seals,N/A,Replace the seals,Inspect the rubber door seals for cracks or gaps and replace them if necessary,N/A
+Universally,Refrigerator,LG,4601,Verify the door seals,N/A,Inspect the door gaskets or seals for any signs of damage or gaps,N/A,Replace the seals,N/A,Replacement seals
+Universally,Refrigerator,LG,4602,Check the condenser fan,N/A,Ensure that the condenser fan is running properly,N/A,Replace the fan,N/A,New fan
+
