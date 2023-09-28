@@ -21,7 +21,7 @@ Please note that the script used to create the ontology is not included in this 
 
 ### KG Embeddings:
 
-Within this folder, you'll find scripts for various knowledge graph embedding methods, such as TransR, DistMult, and ConvE. These scripts leverage the PyKEEN library. However, it's important to note that the data used by these scripts is the output from the Ontology Mapping section and is not included here.
+Inside this folder, you'll discover scripts for various knowledge graph embedding methods, including TransR, DistMult, and ConvE. These scripts make use of the PyKEEN library. It's important to note that the data utilized by these scripts originates from the Ontology Mapping section and is not included here. Additionally, the results of embedding for each model, which encompass the triple scoring for all the triples, as well as the metric results, are not included.
 
 ### Sentence Embeddings:
 
