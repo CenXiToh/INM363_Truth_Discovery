@@ -4,7 +4,7 @@ from torch.utils.data import DataLoader, RandomSampler, SequentialSampler, Tenso
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 
-
+## Import files
 file_path = "/Users/cenxitoh/Desktop/Project_Python/Ontology_Mapping/Mapping_Train.csv"
 file_path2 = "/Users/cenxitoh/Desktop/Project_Python/Ontology_Mapping/Mapping_Test.csv"
 
@@ -16,7 +16,7 @@ df2 = pd.read_csv(file_path2)
 model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
 
-
+## The function for analyzing the similarity between phrases
 def analyze_similarity(df1, df2, predicates_to_include):
     df1["object"] = df1["object"].str.replace('_', " ")
     df2["object"] = df2["object"].str.replace('_', " ")
@@ -67,7 +67,7 @@ def analyze_predicates(df1, df2, predicates):
 
     return final_result_data
 
-df1 = df  # Assuming df and df2 are defined elsewhere in your code
+df1 = df  
 df2 = df2
 predicates = ["hasSymptom", "hasInvestigation", "hasInvestigationEquipment", "hasResolution", "hasResolutionEquipment", "hasResolutionMannerAttribute"]
 
@@ -78,6 +78,6 @@ result_data = analyze_predicates(df1, df2, predicates)
 #    print(item)
 
 
-
+## save the results
 result_data = pd.DataFrame(result_data)
 result_data.to_csv("Sentence_Embedding/sentence_embeddings_results.csv", index = False)
