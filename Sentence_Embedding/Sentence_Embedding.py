@@ -12,11 +12,11 @@ file_path2 = "/Users/cenxitoh/Desktop/Project_Python/Ontology_Mapping/Mapping_Te
 df = pd.read_csv(file_path)
 df2 = pd.read_csv(file_path2)
 
-
+## Define the model used
 model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
 
-## The function for analyzing the similarity between phrases
+## The function for analysing the similarity between phrases
 def analyze_similarity(df1, df2, predicates_to_include):
     df1["object"] = df1["object"].str.replace('_', " ")
     df2["object"] = df2["object"].str.replace('_', " ")
@@ -58,6 +58,7 @@ def analyze_similarity(df1, df2, predicates_to_include):
 
     return result_data
 
+## The function that return the results from a subject and all the predicates
 def analyze_predicates(df1, df2, predicates):
     final_result_data = []
 
