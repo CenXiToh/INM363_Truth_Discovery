@@ -17,7 +17,7 @@ from pykeen.datasets import get_dataset
 import torch
 import matplotlib.pyplot as plt
 
-#import the necessary data and transform to required format
+#import the necessary data and transform to the required format
 file_path = "/Users/cenxitoh/Desktop/Project/Ontology_Mapping/Mapping_Modified.txt"
 tf = TriplesFactory.from_path(file_path)
 
@@ -32,7 +32,7 @@ result = pipeline(
         random_seed=64)
 
 
-
+#plot the results
 result.plot_losses()
 plt.show()
 
